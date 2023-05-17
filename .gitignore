@@ -1,5 +1,5 @@
-*staged
-*raw
+*staged/*.csv
+*raw/*.csv
 *.lock
 *__pycache__
 *.env
