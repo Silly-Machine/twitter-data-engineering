@@ -1,8 +1,15 @@
 import glob
 import pandas as pd
+import json
 
 def load_dataframes(path_class="data/raw/"):
     return pd.concat(map(pd.read_csv, glob.glob(f'{path_class}*.csv')))
+
+
+def save_dataframe_column_types_as_json(df, file_path):
+    column_types = df.dtypes.apply(lambda x: x.name).to_dict()
+    with open(file_path, 'w') as f:
+        json.dump(column_types, f, indent=4)
 
 
 def sort_dataframe_by_date(df):

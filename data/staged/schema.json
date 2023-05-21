@@ -1,0 +1,12 @@
+{
+    "created_at": "datetime64[ns, UTC]",
+    "id": "int64",
+    "full_text": "object",
+    "display_text_range": "object",
+    "possibly_sensitive": "object",
+    "hashtags": "object",
+    "symbols": "object",
+    "user_mentions": "object",
+    "urls": "object",
+    "media": "object"
+}
